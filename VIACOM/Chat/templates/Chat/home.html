@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    {% if messages %}
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% endif %}
+
     <p>Welcome to our home page</p>
 </body>
 </html>
